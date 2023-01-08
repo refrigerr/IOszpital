@@ -1,4 +1,3 @@
-package examples;
 
 import java.util.Scanner;
 
@@ -10,20 +9,20 @@ public class User {
 
     public void editPatientsMedicalRecord(){
         Patient patient = searchPatient();
-        MedicalRecord medicalRecord = A.getPatientsMedicalRecord(patient);
+        MedicalRecord medicalRecord = Main.getPatientsMedicalRecord(patient);
         addRecordToMedicalRecord(medicalRecord);
 
     }
     public void dischargePatient(){
         Patient patient = searchPatient();
-        MedicalRecord medicalRecord = A.getPatientsMedicalRecord(patient);
+        MedicalRecord medicalRecord = Main.getPatientsMedicalRecord(patient);
         addRecordToMedicalRecord(medicalRecord);
-        A.getDepartmentByID(patient.getDepartmentID()).getRoomByID(patient.getRoomID()).getBedByPatient(patient).freeBed();
+        Main.getDepartmentByID(patient.getDepartmentID()).getRoomByID(patient.getRoomID()).getBedByPatient(patient).freeBed();
     }
     public Patient searchPatient(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Podaj id: ");
-        return A.getPatientById(scanner.nextInt());
+        return Main.getPatientById(scanner.nextInt());
     }
 
     public void addRecordToMedicalRecord(MedicalRecord medicalRecord){

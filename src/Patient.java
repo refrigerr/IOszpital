@@ -1,4 +1,4 @@
-package examples;
+
 
 public class Patient {
 
@@ -14,10 +14,10 @@ public class Patient {
         this.id = counter;
         this.departmentID=departmentID;
         counter++;
-        A.addPatient(this);
-        A.addMedicalRecord(this);
-        A.getDepartmentByID(departmentID).addPatient(this);
-        A.getDepartmentByID(departmentID).getRoomByID(roomID).addPatient(this);
+        Main.addPatient(this);
+        Main.addMedicalRecord(this);
+        Main.getDepartmentByID(departmentID).addPatient(this);
+        Main.getDepartmentByID(departmentID).getRoomByID(roomID).addPatient(this);
 
     }
 

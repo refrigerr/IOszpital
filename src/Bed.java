@@ -1,4 +1,4 @@
-package examples;
+
 
 public class Bed {
 
