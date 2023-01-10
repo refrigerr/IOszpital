@@ -18,7 +18,7 @@ public class Record {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         System.out.println("Tytul: "+title);
         System.out.println("Autor: "+author);
-        System.out.println(dtf.format(date));
-        System.out.println("\nOpis:\n "+description);
+        System.out.println("Data: "+dtf.format(date));
+        System.out.println("\nOpis:\n"+description+"\n\n");
     }
 }

@@ -1,7 +1,6 @@
 package Patients;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MedicalRecord {
     ArrayList<Record> records = new ArrayList<>();
@@ -13,9 +12,10 @@ public class MedicalRecord {
     public void addRecord(Record record){
         records.add(record);
     }
-    public void show(){
-        for (Record record: records){
-            record.printRecord();
+    public void print(){
+        for (int i =0;i<records.size();i++){
+            System.out.println("Wpis nr " + (i + 1));
+            records.get(i).printRecord();
         }
     }
 }

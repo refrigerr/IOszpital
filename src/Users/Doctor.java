@@ -1,8 +1,6 @@
 package Users;
 
-import Main.ApplicationInstance;
 import Patients.MedicalRecord;
-import Patients.Patient;
 import Patients.Record;
 
 import java.util.Scanner;
@@ -18,26 +16,22 @@ public class Doctor extends User{
         if(medicalRecord==null)
             return;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Do you want to insert record? [Y/N]");
+        System.out.println("Czy chcesz dodac wpis? [Y/N]");
         String choice = scanner.nextLine();
-        while (!choice.equals("N")&&!choice.equals("n")){
+        while (choice.equals("y")||choice.equals("Y")){
             addRecordToMedicalRecord(medicalRecord);
+            System.out.println("Czy chcesz dodac wpis? [Y/N]");
+            choice = scanner.nextLine();
         }
+        medicalRecord.print();
     }
     public void addRecordToMedicalRecord(MedicalRecord medicalRecord){
-        boolean insertNextRecord = true;
-        String choice;
-        while (insertNextRecord){
-            Scanner scanner = new Scanner(System.in);
-            String title, description;
-            System.out.print("Podaj tytul: ");
-            title = scanner.nextLine();
-            System.out.print("Podaj Wpis: ");
-            description = scanner.nextLine();
-            medicalRecord.addRecord(new Record(title,name+" "+lastName, description));
-            System.out.println("Czy chcesz dodac kolejny wpis? [Y/N]");
-            choice = scanner.nextLine();
-            insertNextRecord = choice.equals("Y") || choice.equals("y");
-        }
+        Scanner scanner = new Scanner(System.in);
+        String title, description;
+        System.out.print("Podaj tytul: ");
+        title = scanner.nextLine();
+        System.out.print("Podaj Wpis: ");
+        description = scanner.nextLine();
+        medicalRecord.addRecord(new Record(title,name + " " + lastName, description));
     }
 }

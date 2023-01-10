@@ -6,7 +6,6 @@ import Patients.Patient;
 import Users.Doctor;
 import Users.User;
 
-import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -19,8 +18,8 @@ public class ApplicationInstance {
     public static void main(String[] args) {
         User user = new User("imie","nazwisko");
         addDepartment(new Department());
-        new Patient("imie","nazwisko",1);
-        user.dischargePatient();
+        new Patient("imie","nazwisko",1, "PESEL");
+        editPatientsMedicalRecord();
 
     }
 

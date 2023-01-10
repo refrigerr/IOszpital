@@ -36,4 +36,11 @@ public class Patient {
     public int getRoomID() {
         return roomID;
     }
+
+    public String getName(){
+        return name;
+    }
+    public String getSurname(){
+        return surname;
+    }
 }
