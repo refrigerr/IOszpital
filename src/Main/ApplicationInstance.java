@@ -31,6 +31,24 @@ public class ApplicationInstance {
         }
         return null;
     }
+
+    public static Patient getPatientByPesel(String pesel){
+        for(Patient p: patients){
+            if(p.getPesel().equals(pesel)){
+                return p;
+            }
+        }
+        return null;
+    }
+    public static Patient getPatientByFullname(String name, String surname){
+        for(Patient p: patients){
+            if (p.getName().equals(name) && p.getSurname().equals(surname))
+                return p;
+        }
+
+        return null;
+    }
+
     public static MedicalRecord getPatientsMedicalRecord(Patient patient){
         return medicalRecords.get(patient);
     }

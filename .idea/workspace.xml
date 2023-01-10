@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patients/MedicalRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/MedicalRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patients/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patients/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej" />
     <list id="37d85771-69b1-483e-8692-bbbdb149e9ee" name="Changes by patry" comment="">
       <change beforePath="$PROJECT_DIR$/src/Patients/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/Patient.java" afterDir="false" />
     </list>
@@ -40,26 +32,6 @@
         <range start1="14" end1="15" start2="14" end2="15" changelist="de7df2a5-4309-4ca3-a61f-9b52af7d676c" />
         <range start1="17" end1="17" start2="17" end2="18" changelist="37d85771-69b1-483e-8692-bbbdb149e9ee" />
         <range start1="31" end1="31" start2="32" end2="36" changelist="37d85771-69b1-483e-8692-bbbdb149e9ee" />
-        <range start1="38" end1="38" start2="43" end2="50" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Users/User.java">
-      <ranges>
-        <range start1="27" end1="27" start2="27" end2="29" changelist="de7df2a5-4309-4ca3-a61f-9b52af7d676c" />
-        <range start1="28" end1="32" start2="30" end2="61" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-        <range start1="34" end1="35" start2="63" end2="63" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-        <range start1="39" end1="42" start2="67" end2="69" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-        <range start1="43" end1="43" start2="70" end2="71" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-        <range start1="44" end1="46" start2="72" end2="72" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-        <range start1="50" end1="51" start2="76" end2="79" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-        <range start1="52" end1="52" start2="80" end2="88" changelist="de7df2a5-4309-4ca3-a61f-9b52af7d676c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Main/ApplicationInstance.java">
-      <ranges>
-        <range start1="8" end1="9" start2="8" end2="8" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-        <range start1="21" end1="23" start2="20" end2="22" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
-        <range start1="34" end1="34" start2="33" end2="51" changelist="de7df2a5-4309-4ca3-a61f-9b52af7d676c" />
       </ranges>
     </file>
   </component>
@@ -120,7 +92,7 @@
       <workItem from="1673293741669" duration="309000" />
       <workItem from="1673354952808" duration="499000" />
       <workItem from="1673357407215" duration="2868000" />
-      <workItem from="1673376023733" duration="5532000" />
+      <workItem from="1673376023733" duration="5738000" />
     </task>
     <task id="LOCAL-00001" summary="EdytowanieDokumentacjiMEdycznej">
       <created>1673359830869</created>
@@ -129,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673359830869</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="EdytowanieDokumentacjiMEdycznej">
+      <created>1673382425870</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673382425870</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

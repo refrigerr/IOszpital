@@ -25,6 +25,8 @@ public class User {
         Scanner scanner = new Scanner(System.in);
         Patient patient = null;
         int id;
+        String pesel, imie, nazwisko;
+        int choice2;
         boolean search = true;
         while (search){
             printMenu();
@@ -75,5 +77,13 @@ public class User {
         MedicalRecord medicalRecord = ApplicationInstance.getPatientsMedicalRecord(patient);
         medicalRecord.print();
         return medicalRecord;
+    }
+
+    public void printMenu(){
+        System.out.println("=== MENU ===");
+        System.out.println("= Wybierz opcje wyszukiwania pacjenta =");
+        System.out.println("1. Podanie Id");
+        System.out.println("2. Podanie numeru PESEL");
+        System.out.println("3. Podanie imienia i nazwiska");
     }
 }
