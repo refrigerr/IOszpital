@@ -1,3 +1,7 @@
+package Hospital;
+
+import Hospital.Bed;
+import Patients.Patient;
 
 import java.util.ArrayList;
 

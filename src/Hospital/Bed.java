@@ -1,4 +1,6 @@
+package Hospital;
 
+import Patients.Patient;
 
 public class Bed {
 

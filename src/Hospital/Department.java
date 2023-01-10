@@ -1,4 +1,7 @@
+package Hospital;
 
+import Hospital.Room;
+import Patients.Patient;
 
 import java.util.ArrayList;
 

@@ -1,10 +1,14 @@
+package Patients;
 
+import Main.ApplicationInstance;
 
 public class Patient {
 
     private static int counter = 1;
     String name, surname;
-    int id, departmentID, roomID;
+    int id;
+    int departmentID;
+    public int roomID;
 
 
 
@@ -14,10 +18,10 @@ public class Patient {
         this.id = counter;
         this.departmentID=departmentID;
         counter++;
-        Main.addPatient(this);
-        Main.addMedicalRecord(this);
-        Main.getDepartmentByID(departmentID).addPatient(this);
-        Main.getDepartmentByID(departmentID).getRoomByID(roomID).addPatient(this);
+        ApplicationInstance.addPatient(this);
+        ApplicationInstance.addMedicalRecord(this);
+        ApplicationInstance.getDepartmentByID(departmentID).addPatient(this);
+        ApplicationInstance.getDepartmentByID(departmentID).getRoomByID(roomID).addPatient(this);
 
     }
 

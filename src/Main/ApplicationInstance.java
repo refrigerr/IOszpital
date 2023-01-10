@@ -1,14 +1,23 @@
+package Main;
+
+import Hospital.Department;
+import Patients.MedicalRecord;
+import Patients.Patient;
+import Users.Doctor;
+import Users.User;
+
+import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Main {
+public class ApplicationInstance {
     public static ArrayList<Patient> patients = new ArrayList<>();
     public static HashMap<Patient, MedicalRecord> medicalRecords = new HashMap<>();
 
     public static ArrayList<Department> departments = new ArrayList<>();
 
     public static void main(String[] args) {
-        User user = new User();
+        User user = new User("imie","nazwisko");
         addDepartment(new Department());
         new Patient("imie","nazwisko",1);
         user.dischargePatient();
@@ -43,5 +52,10 @@ public class Main {
     }
     public static void addDepartment(Department department){
         departments.add(department);
+    }
+
+    public static void editPatientsMedicalRecord(){
+        Doctor doctor = new Doctor("Jan", "Kowalski");
+        doctor.editPatientsMedicalRecord();
     }
 }
