@@ -47,4 +47,16 @@ public class Room {
         return false;
     }
 
+    public boolean removePatient(Patient patient){
+        for(Bed bed: beds) {
+            if (bed.getPatient() == patient) {
+                bed.freeBed();
+                return true;
+            }
+        }
+        return false;
+    }
+    public ArrayList<Bed> getBeds(){
+        return beds;
+    }
 }

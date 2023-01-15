@@ -1,0 +1,106 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" name=\"Changes\" comment=\"EdytowanieDokumentacjiMEdycznej\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Main/ApplicationInstance.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main/ApplicationInstance.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Patients/MedicalRecord.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Patients/MedicalRecord.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Patients/Patient.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Patients/Patient.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Patients/Record.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Patients/Record.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Users/Doctor.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Users/Doctor.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Users/User.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Users/User.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"37d85771-69b1-483e-8692-bbbdb149e9ee\" name=\"Changes by patry\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/Patients/Patient.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Patients/Patient.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"de7df2a5-4309-4ca3-a61f-9b52af7d676c\" name=\"Changes by speed\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/Main/ApplicationInstance.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main/ApplicationInstance.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Patients/Patient.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Patients/Patient.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Users/User.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Users/User.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"LineStatusTrackerManager\">\r\n    <file path=\"$PROJECT_DIR$/src/Patients/Patient.java\">\r\n      <ranges>\r\n        <range start1=\"7\" end1=\"8\" start2=\"7\" end2=\"8\" changelist=\"37d85771-69b1-483e-8692-bbbdb149e9ee\" />\r\n        <range start1=\"14\" end1=\"15\" start2=\"14\" end2=\"15\" changelist=\"de7df2a5-4309-4ca3-a61f-9b52af7d676c\" />\r\n        <range start1=\"17\" end1=\"17\" start2=\"17\" end2=\"18\" changelist=\"37d85771-69b1-483e-8692-bbbdb149e9ee\" />\r\n        <range start1=\"31\" end1=\"31\" start2=\"32\" end2=\"36\" changelist=\"37d85771-69b1-483e-8692-bbbdb149e9ee\" />\r\n        <range start1=\"38\" end1=\"38\" start2=\"43\" end2=\"50\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/src/Users/User.java\">\r\n      <ranges>\r\n        <range start1=\"27\" end1=\"27\" start2=\"27\" end2=\"29\" changelist=\"de7df2a5-4309-4ca3-a61f-9b52af7d676c\" />\r\n        <range start1=\"28\" end1=\"32\" start2=\"30\" end2=\"61\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n        <range start1=\"34\" end1=\"35\" start2=\"63\" end2=\"63\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n        <range start1=\"39\" end1=\"42\" start2=\"67\" end2=\"69\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n        <range start1=\"43\" end1=\"43\" start2=\"70\" end2=\"71\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n        <range start1=\"44\" end1=\"46\" start2=\"72\" end2=\"72\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n        <range start1=\"50\" end1=\"51\" start2=\"76\" end2=\"79\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n        <range start1=\"52\" end1=\"52\" start2=\"80\" end2=\"88\" changelist=\"de7df2a5-4309-4ca3-a61f-9b52af7d676c\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/src/Main/ApplicationInstance.java\">\r\n      <ranges>\r\n        <range start1=\"8\" end1=\"9\" start2=\"8\" end2=\"8\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n        <range start1=\"21\" end1=\"23\" start2=\"20\" end2=\"22\" changelist=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" />\r\n        <range start1=\"34\" end1=\"34\" start2=\"33\" end2=\"51\" changelist=\"de7df2a5-4309-4ca3-a61f-9b52af7d676c\" />\r\n      </ranges>\r\n    </file>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2K3UdKP3dVBK1OeddlTkEhaQN0L\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/Studia/sem 5/IO/IOszpital&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"ApplicationInstance\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main.ApplicationInstance\" />\r\n      <module name=\"IOszpital\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Main.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.ApplicationInstance\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2f35633d-dbcf-4318-aa4c-ff7ac00a4c70\" name=\"Changes\" comment=\"\" />\r\n      <created>1673202847271</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1673202847271</updated>\r\n      <workItem from=\"1673202848498\" duration=\"12000\" />\r\n      <workItem from=\"1673203011270\" duration=\"471000\" />\r\n      <workItem from=\"1673203512562\" duration=\"97000\" />\r\n      <workItem from=\"1673293741669\" duration=\"309000\" />\r\n      <workItem from=\"1673354952808\" duration=\"499000\" />\r\n      <workItem from=\"1673357407215\" duration=\"2868000\" />\r\n      <workItem from=\"1673376023733\" duration=\"5532000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"EdytowanieDokumentacjiMEdycznej\">\r\n      <created>1673359830869</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1673359830869</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"EdytowanieDokumentacjiMEdycznej\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"EdytowanieDokumentacjiMEdycznej\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bc489f2448197c6f6be0ec0ccb845303bcc4d4cc)
++++ b/.idea/workspace.xml	(date 1673382616547)
+@@ -1,23 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Patients/MedicalRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/MedicalRecord.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Patients/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/Patient.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Patients/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/Record.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Users/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Doctor.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/User.java" afterDir="false" />
+-    </list>
+-    <list id="37d85771-69b1-483e-8692-bbbdb149e9ee" name="Changes by patry" comment="">
+-      <change beforePath="$PROJECT_DIR$/src/Patients/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/Patient.java" afterDir="false" />
+-    </list>
+-    <list id="de7df2a5-4309-4ca3-a61f-9b52af7d676c" name="Changes by speed" comment="">
+-      <change beforePath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Patients/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/Patient.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/User.java" afterDir="false" />
+-    </list>
++    <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej" />
++    <list id="37d85771-69b1-483e-8692-bbbdb149e9ee" name="Changes by patry" comment="" />
++    <list id="de7df2a5-4309-4ca3-a61f-9b52af7d676c" name="Changes by speed" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -33,36 +22,6 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="LineStatusTrackerManager">
+-    <file path="$PROJECT_DIR$/src/Patients/Patient.java">
+-      <ranges>
+-        <range start1="7" end1="8" start2="7" end2="8" changelist="37d85771-69b1-483e-8692-bbbdb149e9ee" />
+-        <range start1="14" end1="15" start2="14" end2="15" changelist="de7df2a5-4309-4ca3-a61f-9b52af7d676c" />
+-        <range start1="17" end1="17" start2="17" end2="18" changelist="37d85771-69b1-483e-8692-bbbdb149e9ee" />
+-        <range start1="31" end1="31" start2="32" end2="36" changelist="37d85771-69b1-483e-8692-bbbdb149e9ee" />
+-        <range start1="38" end1="38" start2="43" end2="50" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/src/Users/User.java">
+-      <ranges>
+-        <range start1="27" end1="27" start2="27" end2="29" changelist="de7df2a5-4309-4ca3-a61f-9b52af7d676c" />
+-        <range start1="28" end1="32" start2="30" end2="61" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-        <range start1="34" end1="35" start2="63" end2="63" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-        <range start1="39" end1="42" start2="67" end2="69" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-        <range start1="43" end1="43" start2="70" end2="71" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-        <range start1="44" end1="46" start2="72" end2="72" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-        <range start1="50" end1="51" start2="76" end2="79" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-        <range start1="52" end1="52" start2="80" end2="88" changelist="de7df2a5-4309-4ca3-a61f-9b52af7d676c" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/src/Main/ApplicationInstance.java">
+-      <ranges>
+-        <range start1="8" end1="9" start2="8" end2="8" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-        <range start1="21" end1="23" start2="20" end2="22" changelist="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" />
+-        <range start1="34" end1="34" start2="33" end2="51" changelist="de7df2a5-4309-4ca3-a61f-9b52af7d676c" />
+-      </ranges>
+-    </file>
+-  </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+@@ -150,4 +109,8 @@
+     <MESSAGE value="EdytowanieDokumentacjiMEdycznej" />
+     <option name="LAST_COMMIT_MESSAGE" value="EdytowanieDokumentacjiMEdycznej" />
+   </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand />
++    <select />
++  </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision bc489f2448197c6f6be0ec0ccb845303bcc4d4cc)
++++ b/.idea/misc.xml	(date 1673382616561)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
