@@ -3,6 +3,7 @@ package Users;
 import Main.ApplicationInstance;
 import Patients.MedicalRecord;
 import Patients.Patient;
+import jdk.jfr.StackTrace;
 
 import java.util.Scanner;
 

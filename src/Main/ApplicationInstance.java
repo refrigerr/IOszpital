@@ -5,6 +5,7 @@ import Patients.MedicalRecord;
 import Patients.Patient;
 import Users.Doctor;
 import Users.User;
+import Interface.UI;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,6 +20,7 @@ public class ApplicationInstance {
         User user = new User("imie","nazwisko");
         addDepartment(new Department());
         new Patient("imie","nazwisko",1, "PESEL");
+        UI.StartMenu();
         editPatientsMedicalRecord();
 
     }
