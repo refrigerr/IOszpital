@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="UI added">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2023_21_32_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2023_21_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hospital/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hospital/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/UI.java" afterDir="false" />
-    </list>
+    <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="wyglad zle, ale dziala zle" />
     <list id="37d85771-69b1-483e-8692-bbbdb149e9ee" name="Changes by patry" comment="" />
     <list id="de7df2a5-4309-4ca3-a61f-9b52af7d676c" name="Changes by speed" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +131,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673814953720</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="UI added">
+      <created>1673995367777</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673995367777</updated>
+    </task>
+    <task id="LOCAL-00006" summary="wyglad zle, ale dziala zle">
+      <created>1673995406452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673995406452</updated>
+    </task>
+    <task id="LOCAL-00007" summary="wyglad zle, ale dziala zle">
+      <created>1673995542467</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673995542467</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +171,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EdytowanieDokumentacjiMEdycznej" />
+    <MESSAGE value="wyglada zle, ale za to dziala zle" />
     <MESSAGE value="UI added" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI added" />
+    <MESSAGE value="zle wyglada, ale za to dziala gorzej" />
+    <MESSAGE value="wyglad zle, ale dziala zle" />
+    <option name="LAST_COMMIT_MESSAGE" value="wyglad zle, ale dziala zle" />
   </component>
 </project>
