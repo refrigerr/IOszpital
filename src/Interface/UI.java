@@ -140,19 +140,15 @@ public class UI {
         int oddzial = Integer.parseInt(GetUserResponse("Podaj id oddzialu: \n"));
         Bed temp = new Bed();
        // if(departments.get(oddzial).showRooms().size() > )
-        for(Room room: departments.get(oddzial).showRooms()){
-            for(Bed bed: room.getBeds()){
-                if(bed.getPatient() == null){
-                    Patient patient = new Patient(imie, nazwisko, oddzial, pesel);
-                    departments.get(oddzial).addPatient(patient);
-                    patients.add(patient);
-                    bed.assignPatient(patient);
-                    System.out.println("Umieszczono pacjenta na oddziale nr " + oddzial + " w pokoju nr "+ room.getId());
-                    return;
-                }
-            }
-        }
-        System.out.println("Brak wolnych miejsc w wybranym oddziale");
+
+        Patient patient = new Patient(imie, nazwisko, oddzial, pesel);
+
+        boolean success = ApplicationInstance.addPatient(patient, oddzial);
+
+        if (success)
+            System.out.println("Umieszczono pacjenta na oddziale nr " + oddzial);
+        else
+            System.out.println("Brak wolnych miejsc w wybranym oddziale");
     }
 
     public static void NurseMenu(){

@@ -1,5 +1,6 @@
 package Main;
 
+import Hospital.Bed;
 import Hospital.Department;
 import Hospital.Room;
 import Patients.MedicalRecord;
@@ -25,7 +26,11 @@ public class ApplicationInstance {
         for (int i=0;i<10;i++){
             departments.add(new Department(10));
         }
-        UI.StartMenu();
+        //UI.StartMenu();
+        //patients.add(new Patient("imie", "nazwisko", 1, "1"));
+        Patient patient = new Patient("imie", "nazwisko", 1, "1");
+        addPatient(patient);
+        addMedicalRecord(patient);
         editPatientsMedicalRecord();
 
     }
@@ -105,6 +110,21 @@ public class ApplicationInstance {
         for(Department dep: departments){
             if (dep.equals(department))
                 return true;
+        }
+        return false;
+    }
+
+    public static boolean addPatient(Patient patient, int departmentID) {
+        departmentID--;
+        for(Room room: departments.get(departmentID).showRooms()) {
+            for (Bed bed : room.getBeds()) {
+                if (bed.getPatient() == null) {
+                    departments.get(departmentID).addPatient(patient);
+                    patients.add(patient);
+                    bed.assignPatient(patient);
+                    return true;
+                }
+            }
         }
         return false;
     }

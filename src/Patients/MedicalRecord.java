@@ -18,4 +18,8 @@ public class MedicalRecord {
             records.get(i).printRecord();
         }
     }
+
+    public ArrayList<Record> getRecords() {
+        return records;
+    }
 }

@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej">
-      <change afterPath="$PROJECT_DIR$/src/Test/TestGetFreeBed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/TestSearchPatientInHospital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/TestEditPatientsMedicalRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2023_21_32_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2023_21_32__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hospital/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOszpital.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IOszpital.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Patients/MedicalRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/MedicalRecord.java" afterDir="false" />
     </list>
     <list id="37d85771-69b1-483e-8692-bbbdb149e9ee" name="Changes by patry" comment="" />
     <list id="de7df2a5-4309-4ca3-a61f-9b52af7d676c" name="Changes by speed" comment="" />
@@ -24,12 +20,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -43,24 +43,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Studia/sem 5/IO/IOszpital&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
-  }
-}</component>
-  <component name="RunManager" selected="JUnit.TestGetFreeBed.testGetBeds">
-    <configuration name="TestGetFreeBed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager" selected="JUnit.TestEditPatientsMedicalRecord.testSearchPatientPatientEqual">
+    <configuration name="TestEditPatientsMedicalRecord.testGetPatientByFullName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IOszpital" />
       <extension name="coverage">
         <pattern>
@@ -69,29 +61,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestGetFreeBed" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestGetFreeBed.getBeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IOszpital" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestGetFreeBed" />
-      <option name="METHOD_NAME" value="getBeds" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestEditPatientsMedicalRecord" />
+      <option name="METHOD_NAME" value="testGetPatientByFullName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetFreeBed.testGetBeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEditPatientsMedicalRecord.testGetPatientById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IOszpital" />
       <extension name="coverage">
         <pattern>
@@ -100,14 +77,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestGetFreeBed" />
-      <option name="METHOD_NAME" value="testGetBeds" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestEditPatientsMedicalRecord" />
+      <option name="METHOD_NAME" value="testGetPatientById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetFreeBed.testGetRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEditPatientsMedicalRecord.testGetPatientByPesel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IOszpital" />
       <extension name="coverage">
         <pattern>
@@ -116,14 +93,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestGetFreeBed" />
-      <option name="METHOD_NAME" value="testGetRooms" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestEditPatientsMedicalRecord" />
+      <option name="METHOD_NAME" value="testGetPatientByPesel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetFreeBed.testgetBeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEditPatientsMedicalRecord.testSearchPatientPatientEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IOszpital" />
       <extension name="coverage">
         <pattern>
@@ -132,8 +109,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestGetFreeBed" />
-      <option name="METHOD_NAME" value="testgetBeds" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestEditPatientsMedicalRecord" />
+      <option name="METHOD_NAME" value="testSearchPatientPatientEqual" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestEditPatientsMedicalRecord.testSearchPatientUnEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IOszpital" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestEditPatientsMedicalRecord" />
+      <option name="METHOD_NAME" value="testSearchPatientUnEqual" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestGetFreeBed.testGetBeds" />
-        <item itemvalue="JUnit.TestGetFreeBed.testgetBeds" />
-        <item itemvalue="JUnit.TestGetFreeBed.getBeds" />
-        <item itemvalue="JUnit.TestGetFreeBed.testGetRooms" />
-        <item itemvalue="JUnit.TestGetFreeBed" />
+        <item itemvalue="JUnit.TestEditPatientsMedicalRecord.testSearchPatientPatientEqual" />
+        <item itemvalue="JUnit.TestEditPatientsMedicalRecord.testSearchPatientUnEqual" />
+        <item itemvalue="JUnit.TestEditPatientsMedicalRecord.testGetPatientById" />
+        <item itemvalue="JUnit.TestEditPatientsMedicalRecord.testGetPatientByPesel" />
+        <item itemvalue="JUnit.TestEditPatientsMedicalRecord.testGetPatientByFullName" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +156,8 @@
       <workItem from="1673293741669" duration="309000" />
       <workItem from="1673354952808" duration="499000" />
       <workItem from="1673357407215" duration="2868000" />
-      <workItem from="1673376023733" duration="5532000" />
+      <workItem from="1673376023733" duration="5738000" />
+      <workItem from="1674044794050" duration="4766000" />
     </task>
     <task id="LOCAL-00001" summary="EdytowanieDokumentacjiMEdycznej">
       <created>1673359830869</created>
@@ -172,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673359830869</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="EdytowanieDokumentacjiMEdycznej">
+      <created>1673382425870</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673382425870</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,23 +184,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="Dev_Maciej" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EdytowanieDokumentacjiMEdycznej" />
