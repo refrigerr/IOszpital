@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import static Main.ApplicationInstance.departments;
+import static Main.ApplicationInstance.patients;
 
 public class UI {
 
@@ -125,7 +126,13 @@ public class UI {
         System.out.println("Pokoje: \n");
         for(Room room: pokoje){
             System.out.println("Pokoj numer: " + room.getId());
-
+            System.out.println("Pacjenci: ");
+            for(Bed bed: room.getBeds()){
+                if(bed.getPatient()!=null){
+                    System.out.println(bed.getPatient().getName() + " " + bed.getPatient().getSurname() + " " + bed.getPatient().getPesel());
+                    System.out.println("");
+                }
+            }
         }
     }
     public static void putPatientInfo(){
@@ -133,33 +140,40 @@ public class UI {
         String nazwisko = GetUserResponse("Podaj nazwisko: \n");
         String pesel = GetUserResponse("Podaj pesel: \n");
         int oddzial = Integer.parseInt(GetUserResponse("Podaj id oddzialu: \n"));
-
+        Bed temp = new Bed();
        // if(departments.get(oddzial).showRooms().size() > )
         for(Room room: departments.get(oddzial).showRooms()){
             for(Bed bed: room.getBeds()){
                 if(bed.getPatient() == null){
+                    Patient patient = new Patient(imie, nazwisko, oddzial, pesel);
+                    departments.get(oddzial).addPatient(patient);
+                    patients.add(patient);
+                    bed.assignPatient(patient);
+                    System.out.println("Umieszczono pacjenta na oddziale nr " + oddzial + " w pokoju nr "+ room.getId());
                     return;
                 }
             }
         }
         System.out.println("Brak wolnych miejsc w wybranym oddziale");
-
-        Patient patient = new Patient(imie, nazwisko, oddzial, pesel);
-        departments.get(oddzial).addPatient(patient);
     }
 
     public static void NurseMenu(){
         final String choice = "== MENU PIELEGNIARKI== \n 1. Wyszukaj informacje o oddziale \n 2. Dodaj pacjenta";
-        int response = Integer.parseInt(GetUserResponse(choice));
-        switch(response){
-            case 1:
-                showDepartmentInfo();
-                break;
+        int response = 0;
+        do{
+            response = Integer.parseInt(GetUserResponse(choice));
+            switch(response){
+                case 1:
+                    showDepartmentInfo();
+                    break;
 
-            case 2:
-                putPatientInfo();
-                break;
-        }
+                case 2:
+                    putPatientInfo();
+                    break;
+            }
+        }while(response!=0);
+
+
     }
 
     public static void ReceptionistMenu(){
@@ -171,7 +185,7 @@ public class UI {
                 break;
 
             case 2:
-                putPatientInfo();
+               // putPatientInfo();
                 break;
         }
     }

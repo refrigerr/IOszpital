@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej">
-      <change afterPath="$PROJECT_DIR$/src/Interface/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IOszpital.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IOszpital.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/User.java" afterDir="false" />
@@ -129,7 +129,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Dev_Maciej" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

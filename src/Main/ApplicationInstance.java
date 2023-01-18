@@ -1,6 +1,7 @@
 package Main;
 
 import Hospital.Department;
+import Hospital.Room;
 import Patients.MedicalRecord;
 import Patients.Patient;
 import Users.Doctor;
@@ -20,6 +21,9 @@ public class ApplicationInstance {
         User user = new User("imie","nazwisko");
         addDepartment(new Department());
         new Patient("imie","nazwisko",1, "PESEL");
+        for (int i=0;i<10;i++){
+            departments.add(new Department());
+        }
         UI.StartMenu();
         editPatientsMedicalRecord();
 
