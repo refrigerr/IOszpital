@@ -1,17 +1,20 @@
 package Test;
 
-import static Main.ApplicationInstance.departments;
-import static Main.ApplicationInstance.patients;
-import static org.junit.Assert.*;
-
-import Hospital.Bed;
 import Hospital.Department;
 import Hospital.Room;
 import Main.ApplicationInstance;
-import Patients.Patient;
 import org.junit.Test;
 
+import static Main.ApplicationInstance.departments;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
 public class TestGetFreeBed {
+
+    @Test
+    public void Department(){
+        // coming soon...
+    }
 
     @Test
     public void testSearchDepartment(){
@@ -33,7 +36,7 @@ public class TestGetFreeBed {
         }
     }
 
-    @Test
+/*    @Test
     public void testSearchFreeBed(){
         Department department = new Department(12);
         for(Room room: department.showRooms()){
@@ -41,6 +44,12 @@ public class TestGetFreeBed {
                     assertNull("Znaleziono wolne lozko", bed.getPatient());
             }
         }
+    }*/
+
+    @Test
+    public void testSearchFreeBeds(){
+        Department department = new Department(12);
+        assertTrue(department.CheckBedAvabality());
     }
 
 }

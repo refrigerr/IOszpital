@@ -18,8 +18,10 @@ public class TestAddPatient {
     @org.junit.Test
     public void testAddPatientToRoom(){
         Room room = new Room(6);
+        int count = room.CountFreeBeds();
         Patient patient = new Patient("test","test2",1,"testpesel");
-        assertTrue("Pacent zostal dodany do pokoju", room.addPatient(patient));
+        room.addPatient(patient);
+        assertEquals("Pacent zostal dodany do pokoju", count, room.CountFreeBeds() +1);
 
     }
     @org.junit.Test

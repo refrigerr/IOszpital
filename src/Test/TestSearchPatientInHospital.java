@@ -1,10 +1,10 @@
 package Test;
 
 import Patients.Patient;
-
 import org.junit.Test;
+
 import static Main.ApplicationInstance.*;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 public class TestSearchPatientInHospital {
 
     @Test
