@@ -56,6 +56,14 @@ public class ApplicationInstance {
         return null;
     }
 
+    public static boolean patientExists(Patient patient){
+        for (Patient patient1: patients){
+            if (patient1.equals(patient))
+                return true;
+        }
+        return false;
+    }
+
     public static MedicalRecord getPatientsMedicalRecord(Patient patient){
         return medicalRecords.get(patient);
     }
@@ -91,5 +99,13 @@ public class ApplicationInstance {
     public static void editPatientsMedicalRecord(){
         Doctor doctor = new Doctor("Jan", "Kowalski");
         doctor.editPatientsMedicalRecord();
+    }
+
+    public static boolean departmentExists(Department department){
+        for(Department dep: departments){
+            if (dep.equals(department))
+                return true;
+        }
+        return false;
     }
 }
