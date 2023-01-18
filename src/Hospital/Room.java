@@ -1,6 +1,5 @@
 package Hospital;
 
-import Hospital.Bed;
 import Patients.Patient;
 
 import java.util.ArrayList;
@@ -58,5 +57,15 @@ public class Room {
     }
     public ArrayList<Bed> getBeds(){
         return beds;
+    }
+
+    public int CountFreeBeds(){
+        int counter = 0;
+        for(Bed bed: beds){
+            if(bed.getPatient()==null){
+                counter++;
+            }
+        }
+        return counter;
     }
 }

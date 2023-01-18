@@ -1,6 +1,5 @@
 package Hospital;
 
-import Hospital.Room;
 import Patients.Patient;
 
 import java.util.ArrayList;
@@ -81,6 +80,15 @@ public class Department {
         for (Patient patient1: patients){
             if (patient1.equals(patient))
                 return true;
+        }
+        return false;
+    }
+
+    public boolean CheckBedAvabality(){
+        for(Room room: rooms){
+            if(room.CountFreeBeds()>0){
+                return true;
+            }
         }
         return false;
     }
