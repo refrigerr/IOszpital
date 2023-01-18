@@ -21,3 +21,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+#dodane przeze mnie czyli jak nie dziala to usunac xd
+*.iml
+*.xml

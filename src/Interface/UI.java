@@ -17,8 +17,7 @@ public class UI {
     public static String GetUserResponse(String command){
         Scanner scanner = new Scanner(System.in);
         System.out.println(command);
-        String response = scanner.nextLine();
-        return response;
+        return scanner.nextLine();
     }
 
     public static boolean ChechInput(String input, int format){
