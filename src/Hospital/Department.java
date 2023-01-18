@@ -36,14 +36,16 @@ public class Department {
         System.out.println("Brak miejsca w departamencie");
     }
 
-    public void removePatient(Patient patient){
+    public boolean removePatient(Patient patient){
         for (Room room: rooms){
             if(room.removePatient(patient)){
                 patient.roomID = -1;
                 patients.remove(patient);
+                return true;
             }
         }
         System.out.println("ODMOWA - brak pacjenta na oddziale");
+        return false;
     }
 
     public void addRoom(Room room){

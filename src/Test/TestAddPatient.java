@@ -7,18 +7,19 @@ import Patients.Patient;
 
 import static org.junit.Assert.*;
 
-public class Test {
+public class TestAddPatient {
 
     @org.junit.Test
-    public void showDepartmentInfo(){
-        assert(true);
-
+    public void testAddPatientToBed(){
+        Bed bed = new Bed();
+        bed.assignPatient(new Patient("test","test2",1,"testpesel"));
+        assertNotNull("Pacjent lezy na lozku", bed.getPatient());
     }
     @org.junit.Test
     public void testAddPatientToRoom(){
         Room room = new Room(6);
         Patient patient = new Patient("test","test2",1,"testpesel");
-        assertTrue("Pacent istnieje w pokoju", room.addPatient(patient));
+        assertTrue("Pacent zostal dodany do pokoju", room.addPatient(patient));
 
     }
     @org.junit.Test
@@ -30,19 +31,8 @@ public class Test {
         Patient patient = new Patient("test","test2",1,"testpesel");
         assertFalse("Brak miejsca w pokoju", room.addPatient(patient));
     }
-    @org.junit.Test
-    public void testAddPatientToBed(){
-        Bed bed = new Bed();
-        bed.assignPatient(new Patient("test","test2",1,"testpesel"));
-        assertNotNull("Pacjent lezy na lozku", bed.getPatient());
-    }
-    @org.junit.Test
-    public void testRemovePatientFromBed(){
-        Bed bed = new Bed();
-        bed.assignPatient(new Patient("test","test2",1,"testpesel"));
-        bed.freeBed();
-        assertNull("Pacjent nie lezy na lozku", bed.getPatient());
-    }
+
+
     @org.junit.Test
     public void testAddPatientToDepartment(){
         Department department = new Department(1);
