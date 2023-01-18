@@ -94,8 +94,7 @@ public class UI {
 
     public static int RoleChoice(){
         String roles = "== WYBOR UPRAWNIEN == \n 1. Lekarz \n 2. Pielegniarka \n 3. Pracownik izby przyjec";
-        int num_response = Integer.parseInt(GetUserResponse(roles));
-        return num_response;
+        return Integer.parseInt(GetUserResponse(roles));
     }
 
     public static void DoctorsMenu(){

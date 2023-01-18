@@ -10,6 +10,7 @@ import Interface.UI;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class ApplicationInstance {
     public static ArrayList<Patient> patients = new ArrayList<>();
@@ -19,10 +20,10 @@ public class ApplicationInstance {
 
     public static void main(String[] args) {
         User user = new User("imie","nazwisko");
-        addDepartment(new Department());
+        addDepartment(new Department(10));
         new Patient("imie","nazwisko",1, "PESEL");
         for (int i=0;i<10;i++){
-            departments.add(new Department());
+            departments.add(new Department(10));
         }
         UI.StartMenu();
         editPatientsMedicalRecord();
@@ -66,6 +67,16 @@ public class ApplicationInstance {
     public static void addPatient(Patient patient){
         patients.add(patient);
     }
+    public static void putPatientInDepartment(Patient patient){
+        Objects.requireNonNull(getDepartmentByID(patient.getDepartmentID())).addPatient(patient);
+        Objects.requireNonNull(getDepartmentByID(patient.getDepartmentID())).getRoomByID(patient.getRoomID()).addPatient(patient);
+    }
+    public static void registerNewPatient(Patient patient){
+        addPatient(patient);
+        addMedicalRecord(patient);
+        putPatientInDepartment(patient);
+    }
+
 
     public static Department getDepartmentByID(int id){
         for (Department department: departments)

@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2023_21_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2023_21_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOszpital.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IOszpital.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hospital/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hospital/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hospital/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hospital/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Patients/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patients/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Test.java" afterDir="false" />
     </list>
     <list id="37d85771-69b1-483e-8692-bbbdb149e9ee" name="Changes by patry" comment="" />
     <list id="de7df2a5-4309-4ca3-a61f-9b52af7d676c" name="Changes by speed" comment="" />
@@ -57,7 +58,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ApplicationInstance">
+  <component name="RunManager" selected="JUnit.Test.testAddPatientToDepartment">
     <configuration name="ApplicationInstance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.ApplicationInstance" />
       <module name="IOszpital" />
@@ -71,7 +72,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.EditMedicalRecordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IOszpital" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +82,54 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.Test" />
-      <option name="METHOD_NAME" value="EditMedicalRecordTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.testAddPatientToDepartment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IOszpital" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.Test" />
+      <option name="METHOD_NAME" value="testAddPatientToDepartment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.testAddPatientToRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IOszpital" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.Test" />
+      <option name="METHOD_NAME" value="testAddPatientToRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.testNoBedsAvailableInRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IOszpital" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.Test" />
+      <option name="METHOD_NAME" value="testNoBedsAvailableInRoom" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,8 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test.testAddPatientToDepartment" />
+        <item itemvalue="JUnit.Test" />
+        <item itemvalue="JUnit.Test.testNoBedsAvailableInRoom" />
+        <item itemvalue="JUnit.Test.testAddPatientToRoom" />
         <item itemvalue="Application.ApplicationInstance" />
-        <item itemvalue="JUnit.Test.EditMedicalRecordTest" />
       </list>
     </recent_temporary>
   </component>

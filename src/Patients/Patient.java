@@ -19,11 +19,6 @@ public class Patient {
         this.id = counter;
         this.departmentID=departmentID;
         counter++;
-        ApplicationInstance.addPatient(this);
-        ApplicationInstance.addMedicalRecord(this);
-        ApplicationInstance.getDepartmentByID(departmentID).addPatient(this);
-        ApplicationInstance.getDepartmentByID(departmentID).getRoomByID(roomID).addPatient(this);
-
     }
 
     public int getId() {

@@ -11,11 +11,11 @@ public class Department {
     private final ArrayList<Patient> patients = new ArrayList<>();
     private final ArrayList<Room> rooms = new ArrayList<>();
 
-    public Department(){
+    public Department(int rooms){
         this.id = counter;
         counter++;
-        for (int i=0;i<10;i++){
-            addRoom(new Room());
+        for (int i=0;i<rooms;i++){
+            addRoom(new Room(6));
         }
     }
 
@@ -69,5 +69,17 @@ public class Department {
                 return room;
         }
         return null;
+    }
+
+    public ArrayList<Patient> getPatients() {
+        return patients;
+    }
+
+    public boolean patientExists(Patient patient){
+        for (Patient patient1: patients){
+            if (patient1.equals(patient))
+                return true;
+        }
+        return false;
     }
 }

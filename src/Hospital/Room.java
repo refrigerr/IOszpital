@@ -8,14 +8,14 @@ import java.util.ArrayList;
 public class Room {
 
     private static int counter = 1;
-    private int id;
+    private final int id;
 
     private final ArrayList<Bed> beds = new ArrayList<>();
 
-    public Room (){
+    public Room (int beds){
         this.id = counter;
         counter++;
-        for (int i=0;i<6;i++){
+        for (int i=0;i<beds;i++){
             addBed(new Bed());
         }
     }
@@ -49,7 +49,7 @@ public class Room {
 
     public boolean removePatient(Patient patient){
         for(Bed bed: beds) {
-            if (bed.getPatient() == patient) {
+            if (bed.getPatient().equals(patient)) {
                 bed.freeBed();
                 return true;
             }
