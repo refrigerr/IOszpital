@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej">
-      <change afterPath="$PROJECT_DIR$/src/Test/TestGetFreeBed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/TestSearchPatientInHospital.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2023_21_32_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2023_21_32__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hospital/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hospital/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ApplicationInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/TestAddPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/TestAddPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/TestRemovePatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/TestRemovePatient.java" afterDir="false" />
     </list>
     <list id="37d85771-69b1-483e-8692-bbbdb149e9ee" name="Changes by patry" comment="" />
     <list id="de7df2a5-4309-4ca3-a61f-9b52af7d676c" name="Changes by speed" comment="" />
@@ -59,8 +55,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestGetFreeBed.testGetBeds">
-    <configuration name="TestGetFreeBed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestRemovePatient">
+    <configuration name="TestAddPatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IOszpital" />
       <extension name="coverage">
         <pattern>
@@ -69,7 +65,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestGetFreeBed" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestAddPatient" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,22 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGetFreeBed.testGetRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IOszpital" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestGetFreeBed" />
-      <option name="METHOD_NAME" value="testGetRooms" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestGetFreeBed.testgetBeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IOszpital" />
       <extension name="coverage">
@@ -139,13 +119,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRemovePatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IOszpital" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestRemovePatient" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRemovePatient" />
+        <item itemvalue="JUnit.TestAddPatient" />
         <item itemvalue="JUnit.TestGetFreeBed.testGetBeds" />
         <item itemvalue="JUnit.TestGetFreeBed.testgetBeds" />
         <item itemvalue="JUnit.TestGetFreeBed.getBeds" />
-        <item itemvalue="JUnit.TestGetFreeBed.testGetRooms" />
-        <item itemvalue="JUnit.TestGetFreeBed" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +159,7 @@
       <workItem from="1673354952808" duration="499000" />
       <workItem from="1673357407215" duration="2868000" />
       <workItem from="1673376023733" duration="5532000" />
+      <workItem from="1674073770183" duration="1201000" />
     </task>
     <task id="LOCAL-00001" summary="EdytowanieDokumentacjiMEdycznej">
       <created>1673359830869</created>

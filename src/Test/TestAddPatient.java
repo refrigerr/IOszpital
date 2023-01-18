@@ -18,29 +18,34 @@ public class TestAddPatient {
     @org.junit.Test
     public void testAddPatientToRoom(){
         Room room = new Room(6);
-        int count = room.CountFreeBeds();
-        Patient patient = new Patient("test","test2",1,"testpesel");
-        room.addPatient(patient);
-        assertEquals("Pacent zostal dodany do pokoju", count, room.CountFreeBeds() +1);
+        int count1 = room.CountFreeBeds();
+        room.addPatient(new Patient("test","test2",1,"testpesel"));
+        int count2 = room.CountFreeBeds();
+        assertEquals("Pacent zostal dodany do pokoju", count1-1, count2);
 
     }
     @org.junit.Test
     public void testNoBedsAvailableInRoom(){
         Room room = new Room(6);
-        for (Bed bed: room.getBeds()){
-            bed.assignPatient(new Patient("test","test2",1,"testpesel"));
+        //wypelnienie pokoju pacjentami
+        for (int i=0;i<room.getBeds().size();i++){
+            room.addPatient(new Patient("test","test2",1,"testpesel"));
         }
-        Patient patient = new Patient("test","test2",1,"testpesel");
-        assertFalse("Brak miejsca w pokoju", room.addPatient(patient));
+        int count1 = room.CountFreeBeds();
+        //dodanie pacjenta ponad wielkosc pokoju
+        room.addPatient(new Patient("test","test2",1,"testpesel"));
+        int count2 = room.CountFreeBeds();
+        assertEquals("Nie dodano pacjenta do pokoju", count1, count2);
     }
 
 
     @org.junit.Test
     public void testAddPatientToDepartment(){
         Department department = new Department(1);
-        Patient patient = new Patient("test","test2",1,"testpesel");
-        department.addPatient(patient);
-        assertTrue("Pacjent istnieje w departamencie", department.patientExists(patient));
+        int count1 = department.getPatients().size();
+        department.addPatient(new Patient("test","test2",1,"testpesel"));
+        int count2 = department.getPatients().size();
+        assertEquals("Pacjent istnieje w departamencie", count1+1,count2);
     }
 
 }

@@ -20,13 +20,19 @@ public class TestRemovePatient {
         Room room = new Room(4);
         Patient patient = new Patient("test","test2",1,"testpesel");
         room.addPatient(patient);
-        assertTrue("Usunieto pacjenta z pokoju",room.removePatient(patient));
+        int count1 = room.CountFreeBeds();
+        room.removePatient(patient);
+        int count2 = room.CountFreeBeds();
+        assertEquals("Usunieto pacjenta z pokoju",count1+1,count2);
     }
     @org.junit.Test
     public void testRemovePatientFromDepartment(){
         Department department = new Department(4);
         Patient patient = new Patient("test","test2",1,"testpesel");
         department.addPatient(patient);
-        assertTrue("Usunieto pacjenta z pokoju", department.removePatient(patient));
+        int count1 = department.getPatients().size();
+        department.removePatient(patient);
+        int count2 = department.getPatients().size();
+        assertEquals("Usunieto pacjenta z pokoju", count1-1,count2);
     }
 }
