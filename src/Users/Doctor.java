@@ -19,19 +19,20 @@ public class Doctor extends User{
         System.out.println("Czy chcesz dodac wpis? [Y/N]");
         String choice = scanner.nextLine();
         while (choice.equals("y")||choice.equals("Y")){
-            addRecordToMedicalRecord(medicalRecord);
-            System.out.println("Czy chcesz dodac wpis? [Y/N]");
+            Record record = createRecord();
+            medicalRecord.addRecord(record);
+            System.out.println("Czy chcesz dodac kolejny wpis? [Y/N]");
             choice = scanner.nextLine();
         }
         medicalRecord.print();
     }
-    public void addRecordToMedicalRecord(MedicalRecord medicalRecord){
+    public Record createRecord(){
         Scanner scanner = new Scanner(System.in);
         String title, description;
         System.out.print("Podaj tytul: ");
         title = scanner.nextLine();
         System.out.print("Podaj Wpis: ");
         description = scanner.nextLine();
-        medicalRecord.addRecord(new Record(title,name + " " + lastName, description));
+        return new Record(title,name + " " + lastName, description);
     }
 }

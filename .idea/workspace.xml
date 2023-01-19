@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f35633d-dbcf-4318-aa4c-ff7ac00a4c70" name="Changes" comment="EdytowanieDokumentacjiMEdycznej">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/TestAddPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/TestAddPatient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/TestRemovePatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/TestRemovePatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Doctor.java" afterDir="false" />
     </list>
     <list id="37d85771-69b1-483e-8692-bbbdb149e9ee" name="Changes by patry" comment="" />
     <list id="de7df2a5-4309-4ca3-a61f-9b52af7d676c" name="Changes by speed" comment="" />
@@ -159,7 +157,8 @@
       <workItem from="1673354952808" duration="499000" />
       <workItem from="1673357407215" duration="2868000" />
       <workItem from="1673376023733" duration="5532000" />
-      <workItem from="1674073770183" duration="1201000" />
+      <workItem from="1674073770183" duration="1300000" />
+      <workItem from="1674130505558" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="EdytowanieDokumentacjiMEdycznej">
       <created>1673359830869</created>
