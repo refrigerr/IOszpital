@@ -68,4 +68,12 @@ public class Room {
         }
         return counter;
     }
+
+    public void showRoomInfo(){
+        System.out.println("Pokoj nr "+id+", wolnych miejsc: "+CountFreeBeds());
+        System.out.println("Pacjenci: ");
+        for (Bed bed: beds){
+            bed.showPatientInfo();
+        }
+    }
 }

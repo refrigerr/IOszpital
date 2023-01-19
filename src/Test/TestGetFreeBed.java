@@ -26,12 +26,12 @@ public class TestGetFreeBed {
     @Test
     public void testGetRooms(){
         Department department = new Department(10);
-        assertNotNull("Znaleziono pokoje", department.showRooms());
+        assertNotNull("Znaleziono pokoje", department.getRooms());
     }
     @Test
     public void testGetBeds(){
         Department department = new Department(10);
-        for(Room room: department.showRooms()){
+        for(Room room: department.getRooms()){
             assertNotNull("Znaleziono lozka w pokoju", room.getBeds());
         }
     }

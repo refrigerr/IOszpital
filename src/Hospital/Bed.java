@@ -22,4 +22,10 @@ public class Bed {
         this.patient = patient;
     }
 
+    public void showPatientInfo(){
+        if(patient!=null){
+            System.out.println("Pacjent: "+patient.getName()+" "+patient.getSurname()+" "+patient.getPesel());
+        }
+    }
+
 }

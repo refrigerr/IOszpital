@@ -1,5 +1,6 @@
 package Patients;
 
+import Hospital.Department;
 import Main.ApplicationInstance;
 
 public class Patient {
@@ -17,9 +18,23 @@ public class Patient {
         this.surname = surname;
         this.pesel = pesel;
         this.id = counter;
-        this.departmentID=departmentID;
+        Department department = ApplicationInstance.getDepartmentByID(departmentID);
+        this.departmentID = assignDepartmentID(department);
+
+
         counter++;
     }
+    private int assignDepartmentID(Department department){
+        if(department==null || !department.CheckBedAvabality()){
+            department = ApplicationInstance.getFirstFreeDepartment();
+            if (department==null){
+                System.out.println("Brak miejsca w szpitalu!");
+                return -1;
+            }
+        }
+        return department.getId();
+    }
+
 
     public int getId() {
         return id;

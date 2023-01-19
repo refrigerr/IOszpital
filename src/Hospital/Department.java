@@ -60,7 +60,7 @@ public class Department {
         }
     }
 
-    public ArrayList<Room> showRooms(){
+    public ArrayList<Room> getRooms(){
         return rooms;
     }
 
@@ -91,6 +91,12 @@ public class Department {
             }
         }
         return false;
+    }
+    public void showDepartmentInfo(){
+        System.out.println("Pokoje: ");
+        for (Room room: rooms){
+            room.showRoomInfo();
+        }
     }
 
 }

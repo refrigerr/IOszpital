@@ -1,6 +1,7 @@
 package Interface;
 
 import Hospital.Bed;
+import Hospital.Department;
 import Hospital.Room;
 import Main.ApplicationInstance;
 import Patients.Patient;
@@ -118,20 +119,10 @@ public class UI {
     }
 
     public static void showDepartmentInfo(){
-        int oddzial = Integer.parseInt(GetUserResponse("Wpisz numer oddzialu: \n"));
-        ArrayList<Room> pokoje = new ArrayList<>();
-        pokoje = departments.get(oddzial).showRooms();
-        System.out.println("Pokoje: \n");
-        for(Room room: pokoje){
-            System.out.println("Pokoj numer: " + room.getId());
-            System.out.println("Pacjenci: ");
-            for(Bed bed: room.getBeds()){
-                if(bed.getPatient()!=null){
-                    System.out.println(bed.getPatient().getName() + " " + bed.getPatient().getSurname() + " " + bed.getPatient().getPesel());
-                    System.out.println("");
-                }
-            }
-        }
+        int departmentID = Integer.parseInt(GetUserResponse("Wpisz numer oddzialu: \n"));
+        Department department = ApplicationInstance.getDepartmentByID(departmentID);
+        if (department!= null)
+            department.showDepartmentInfo();
     }
     public static void putPatientInfo(){
         String imie = GetUserResponse("Podaj imie: \n");
@@ -140,7 +131,7 @@ public class UI {
         int oddzial = Integer.parseInt(GetUserResponse("Podaj id oddzialu: \n"));
         Bed temp = new Bed();
        // if(departments.get(oddzial).showRooms().size() > )
-        for(Room room: departments.get(oddzial).showRooms()){
+        for(Room room: departments.get(oddzial).getRooms()){
             for(Bed bed: room.getBeds()){
                 if(bed.getPatient() == null){
                     Patient patient = new Patient(imie, nazwisko, oddzial, pesel);

@@ -92,6 +92,9 @@ public class ApplicationInstance {
                 return department;
         return null;
     }
+    public static int getDepartmentsCount(){
+        return departments.size();
+    }
     public static void addDepartment(Department department){
         departments.add(department);
     }
@@ -107,5 +110,12 @@ public class ApplicationInstance {
                 return true;
         }
         return false;
+    }
+    public static Department getFirstFreeDepartment(){
+        for (Department department: departments){
+            if (department.CheckBedAvabality())
+                return department;
+        }
+        return null;
     }
 }
