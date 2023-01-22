@@ -18,19 +18,19 @@ public class TestGetFreeBed {
 
     @Test
     public void testSearchDepartment(){
-        Department test_department = new Department(10);
+        Department test_department = new Department(10,"test");
         departments.add(test_department);
         assertTrue("Znaleziono oddzial", ApplicationInstance.departmentExists(test_department));
     }
 
     @Test
     public void testGetRooms(){
-        Department department = new Department(10);
+        Department department = new Department(10,"test");
         assertNotNull("Znaleziono pokoje", department.getRooms());
     }
     @Test
     public void testGetBeds(){
-        Department department = new Department(10);
+        Department department = new Department(10,"test");
         for(Room room: department.getRooms()){
             assertNotNull("Znaleziono lozka w pokoju", room.getBeds());
         }
@@ -48,8 +48,8 @@ public class TestGetFreeBed {
 
     @Test
     public void testSearchFreeBeds(){
-        Department department = new Department(12);
-        assertTrue(department.CheckBedAvabality());
+        Department department = new Department(12,"test");
+        assertTrue(department.checkBedAvailability());
     }
 
 }

@@ -1,7 +1,6 @@
 package Main;
 
 import Hospital.Department;
-import Hospital.Room;
 import Patients.MedicalRecord;
 import Patients.Patient;
 import Users.Doctor;
@@ -20,10 +19,9 @@ public class ApplicationInstance {
 
     public static void main(String[] args) {
         User user = new User("imie","nazwisko");
-        addDepartment(new Department(10));
-        new Patient("imie","nazwisko",1, "PESEL");
+        addDepartment(new Department(10,"Kardiologia"));
         for (int i=0;i<10;i++){
-            departments.add(new Department(10));
+            departments.add(new Department(10,"Kardiologia"));
         }
         UI.StartMenu();
         editPatientsMedicalRecord();
@@ -92,6 +90,12 @@ public class ApplicationInstance {
                 return department;
         return null;
     }
+    public static Department getDepartmentByName(String name){
+        for (Department department: departments)
+            if(department.getName().equals(name))
+                return department;
+        return null;
+    }
     public static int getDepartmentsCount(){
         return departments.size();
     }
@@ -113,7 +117,7 @@ public class ApplicationInstance {
     }
     public static Department getFirstFreeDepartment(){
         for (Department department: departments){
-            if (department.CheckBedAvabality())
+            if (department.checkBedAvailability())
                 return department;
         }
         return null;

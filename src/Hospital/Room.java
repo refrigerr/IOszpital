@@ -8,7 +8,6 @@ public class Room {
 
     private static int counter = 1;
     private final int id;
-
     private final ArrayList<Bed> beds = new ArrayList<>();
 
     public Room (int beds){

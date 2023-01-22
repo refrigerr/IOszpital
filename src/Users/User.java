@@ -1,15 +1,22 @@
 package Users;
 
+import Hospital.Department;
+import Interface.UI;
 import Main.ApplicationInstance;
 import Patients.MedicalRecord;
 import Patients.Patient;
+import Patients.Record;
 //import jdk.jfr.StackTrace;
 
+import java.util.Locale;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class User {
 
     String name, lastName;
+    int id, privilage;
+    char[] password;
 
     public User (String name, String lastName){
         this.name = name;
@@ -19,8 +26,9 @@ public class User {
 
     public void dischargePatient(){
         Patient patient = searchPatient();
+        Objects.requireNonNull(ApplicationInstance.getDepartmentByID(patient.getDepartmentID())).getRoomByID(patient.getRoomID()).getBedByPatient(patient).freeBed();
         MedicalRecord medicalRecord = ApplicationInstance.getPatientsMedicalRecord(patient);
-        ApplicationInstance.getDepartmentByID(patient.getDepartmentID()).getRoomByID(patient.getRoomID()).getBedByPatient(patient).freeBed();
+        medicalRecord.addRecord(new Record("Wypis","System","Pacjent zostal wypisany ze szpitala"));
     }
     public Patient searchPatient(){
         Scanner scanner = new Scanner(System.in);
@@ -69,15 +77,13 @@ public class User {
             search = choice.equalsIgnoreCase("y");
 
         }
-        return patient;
+        return null;
     }
     public MedicalRecord searchMedicalRecord(){
         Patient patient = searchPatient();
         if(patient==null)
             return null;
-        MedicalRecord medicalRecord = ApplicationInstance.getPatientsMedicalRecord(patient);
-        medicalRecord.print();
-        return medicalRecord;
+        return ApplicationInstance.getPatientsMedicalRecord(patient);
     }
 
     public void printMenu(){
@@ -87,4 +93,47 @@ public class User {
         System.out.println("2. Podanie numeru PESEL");
         System.out.println("3. Podanie imienia i nazwiska");
     }
+    public void assignPatientToDepartment(){
+
+    }
+    public void registerPatient(){
+        String firstname,lastname,pesel, address, bloodType;
+        int age, departmentID;
+        boolean sex;
+        firstname = UI.GetUserResponse("Imie: ");
+        lastname = UI.GetUserResponse("Nazwisko: ");
+        age = Integer.parseInt(UI.GetUserResponse("Wiek: "));
+        String tempSex = UI.GetUserResponse("Plec [M/K]: ").toLowerCase();
+        sex = !tempSex.equals("m");
+        pesel = UI.GetUserResponse("Pesel: ");
+        address = UI.GetUserResponse("Adres zamieszkania: ");
+        bloodType = UI.GetUserResponse("Grupa krwi: ");
+        departmentID = Integer.parseInt(UI.GetUserResponse("ID departamentu: "));
+        ApplicationInstance.registerNewPatient(new Patient(firstname,lastname,departmentID,pesel,address,bloodType,age,sex));
+    }
+    public Department searchDepartment(){
+        Department department = null;
+        do {
+            String choice = UI.GetUserResponse("Szukaj oddzial po [id/nazwa]: ");
+            switch (choice.toLowerCase()){
+                case "id":
+                    int id = Integer.parseInt(UI.GetUserResponse("Podaj id: "));
+                    department = ApplicationInstance.getDepartmentByID(id);
+                    break;
+                case "nazwa":
+                    String name = UI.GetUserResponse("Podaj nazwe: ");
+                    department = ApplicationInstance.getDepartmentByName(name);
+                    break;
+                default:
+                    System.out.println("Wybrano nieprawidlowa opcje");
+                    break;
+            }
+            if(department==null){
+                String choice2 = UI.GetUserResponse("Czy chcesz szukac jeszcze raz [Y/N]: ").toLowerCase();
+                if(!choice2.equals("y"))
+                    return null;
+            }
+        }while (true);
+    }
+
 }

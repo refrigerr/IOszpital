@@ -7,10 +7,12 @@ import java.util.ArrayList;
 public class Department {
     private static int counter = 1;
     private final int id;
+    private String name;
     private final ArrayList<Patient> patients = new ArrayList<>();
     private final ArrayList<Room> rooms = new ArrayList<>();
 
-    public Department(int rooms){
+    public Department(int rooms, String name){
+        this.name = name;
         this.id = counter;
         counter++;
         for (int i=0;i<rooms;i++){
@@ -84,7 +86,7 @@ public class Department {
         return false;
     }
 
-    public boolean CheckBedAvabality(){
+    public boolean checkBedAvailability(){
         for(Room room: rooms){
             if(room.CountFreeBeds()>0){
                 return true;
@@ -97,6 +99,9 @@ public class Department {
         for (Room room: rooms){
             room.showRoomInfo();
         }
+    }
+    public String getName(){
+        return name;
     }
 
 }

@@ -124,27 +124,7 @@ public class UI {
         if (department!= null)
             department.showDepartmentInfo();
     }
-    public static void putPatientInfo(){
-        String imie = GetUserResponse("Podaj imie: \n");
-        String nazwisko = GetUserResponse("Podaj nazwisko: \n");
-        String pesel = GetUserResponse("Podaj pesel: \n");
-        int oddzial = Integer.parseInt(GetUserResponse("Podaj id oddzialu: \n"));
-        Bed temp = new Bed();
-       // if(departments.get(oddzial).showRooms().size() > )
-        for(Room room: departments.get(oddzial).getRooms()){
-            for(Bed bed: room.getBeds()){
-                if(bed.getPatient() == null){
-                    Patient patient = new Patient(imie, nazwisko, oddzial, pesel);
-                    departments.get(oddzial).addPatient(patient);
-                    patients.add(patient);
-                    bed.assignPatient(patient);
-                    System.out.println("Umieszczono pacjenta na oddziale nr " + oddzial + " w pokoju nr "+ room.getId());
-                    return;
-                }
-            }
-        }
-        System.out.println("Brak wolnych miejsc w wybranym oddziale");
-    }
+
 
     public static void NurseMenu(){
         final String choice = "== MENU PIELEGNIARKI== \n 1. Wyszukaj informacje o oddziale \n 2. Dodaj pacjenta";
@@ -157,7 +137,7 @@ public class UI {
                     break;
 
                 case 2:
-                    putPatientInfo();
+
                     break;
             }
         }while(response!=0);
@@ -174,7 +154,7 @@ public class UI {
                 break;
 
             case 2:
-               // putPatientInfo();
+
                 break;
         }
     }

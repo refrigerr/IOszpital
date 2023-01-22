@@ -17,9 +17,10 @@ public class TestEditPatientsMedicalRecord {
     @org.junit.Before
     public void initializeTest() {
         this.doctor = new Doctor("doktor", "nr1");
-        ApplicationInstance.departments.add(new Department(5));
+        ApplicationInstance.departments.add(new Department(5,"test"));
         for (int i = 0; i < 5; i++) {
-            Patient patient = new Patient("Patient", String.valueOf(i+1), 1, String.valueOf(i+1));
+            Patient patient = new Patient("Patient",String.valueOf(i+1),1,String.valueOf(i+1),"Wroclaw ul.test 1/2","AB",50,true);
+
             ApplicationInstance.registerNewPatient(patient);
 
         }

@@ -5,7 +5,7 @@ import Patients.Record;
 
 import java.util.Scanner;
 
-public class Doctor extends User{
+public class Doctor extends Nurse{
 
     public Doctor (String name, String lastName){
         super(name,lastName);
